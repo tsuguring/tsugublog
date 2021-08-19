@@ -49,16 +49,15 @@ export const PageSEO = ({ title, description }) => {
 
 export const ContentSEO = ({
   authorDetails,
-  title,
-  summary,
   date,
   lastmod,
   url,
   images = [],
+  content,
 }) => {
   const router = useRouter();
-  const publishedAt = new Date(date).toISOString();
-  const modifiedAt = new Date(lastmod || date).toISOString();
+  const publishedAt = content.publishedAt;
+  const modifiedAt = content.revisedAt;
   let imagesArr =
     images.length === 0
       ? [siteMetadata.socialBanner]
@@ -95,7 +94,7 @@ export const ContentSEO = ({
       "@type": "WebPage",
       "@id": url,
     },
-    headline: title,
+    headline: content.title,
     image: featuredImages,
     datePublished: publishedAt,
     dateModified: modifiedAt,
@@ -108,7 +107,7 @@ export const ContentSEO = ({
         url: `${siteMetadata.siteUrl}${siteMetadata.siteLogo}`,
       },
     },
-    description: summary,
+    description: content.description,
   };
 
   const twImageUrl = featuredImages[0].url;
@@ -116,8 +115,8 @@ export const ContentSEO = ({
   return (
     <>
       <CommonSEO
-        title={title}
-        description={summary}
+        title={content.title}
+        description={content.description}
         ogType="article"
         ogImage={featuredImages}
         twImage={twImageUrl}

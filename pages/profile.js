@@ -40,7 +40,7 @@ export default function Profile() {
                 現在はフロントエンドエンジニアを目指しており、様々なプロダクトを開発しています。このブログの開発で使用した技術はJavaScript、Next.js、TailwindCSS、microCMSです。
               </p>
               <p className="px-4 py-4 text-lg leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
-                このwebサイトでは開発したプロダクトと情報を共有するブログを掲載します。
+                このwebサイトでは「開発したプロダクト」、「情報を共有するブログ」を掲載します。
               </p>
             </div>
             <div className="mt-16 flex flex-col border-2 border-gray-500 rounded border-opacity-60">

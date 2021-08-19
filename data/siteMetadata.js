@@ -5,7 +5,7 @@ const siteMetadata = {
   headerTitle: "TsuguBlog",
   description: "エンジニアを目指す大学生に向けて情報を共有するブログ",
   language: "ja",
-  siteUrl: "https://tsugublog.com",
+  siteUrl: "https://tsugu-blog.vercel.app/",
   siteLogo: "/images/logo.png",
   image: "/images/avatar.png",
   socialBanner: "/images/twitter-card.png",

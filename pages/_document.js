@@ -1,4 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { GA_TRACKING_ID } from "../libs/gtag";
+
 class MyDocument extends Document {
   render() {
     return (
@@ -44,6 +46,22 @@ class MyDocument extends Document {
             href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
             integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
             crossOrigin="anonymous"
+          />
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
           />
         </Head>
         <body className="antialiased text-gray-900 bg-gray-50 dark:bg-gray-900 dark:text-gray-100">

@@ -21,10 +21,6 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider attribute="class">
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta
-          name="google-site-verification"
-          content="AAI7Dr6aPAFwLpXo8WTM-6XIu8cxGnlrmcgqJWqzV6c"
-        />
       </Head>
       <Component {...pageProps} />
     </ThemeProvider>

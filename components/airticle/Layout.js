@@ -28,15 +28,15 @@ export default function ContentLayout({ content, pagename }) {
             <div className="text-medium sm:text-lg tracking-wide font-semibold py-2 md:py-6 sm:py-4 text-gray-500 dark:text-gray-400">
               {content.description}
             </div>
-            <div>
+            <figure className="-mx-6 sm:-mx-10 md:-mx-19 lg:-mx-36 xl:-mx-56 flex flex-col justify-center items-center border-2 rounded-lg border-gray-200 dark:border-gray-700">
               <Image
                 alt={content.title}
                 src={content.image.url}
-                className="object-cover object-center lg:h-48 md:h-36"
-                width={1200}
-                height={600}
+                className="object-cover object-center rounded-lg"
+                width={1212}
+                height={582}
               />
-            </div>
+            </figure>
           </div>
         </header>
         <article>

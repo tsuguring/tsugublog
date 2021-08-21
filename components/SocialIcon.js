@@ -1,6 +1,6 @@
-import Github from "../public/favicons/github.svg";
-import Twitter from "../public/favicons/twitter.svg";
-import Mail from "../public/favicons/mail.svg";
+import Github from "../public/images/github.svg";
+import Twitter from "../public/images/twitter.svg";
+import Mail from "../public/images/mail.svg";
 
 const components = {
   mail: Mail,

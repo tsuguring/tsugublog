@@ -3,7 +3,8 @@ const siteMetadata = {
   author: "Ryo Yoshitsugu",
   belongs: "Kwansei Gakuin University",
   headerTitle: "TsuguBlog",
-  description: "エンジニアを目指す大学生に向けて情報を共有するブログ",
+  description:
+    "開発未経験、技術知識がないエンジニアを目指す方に向けて技術情報などを共有するブログ",
   language: "ja",
   siteUrl: "https://tsugu-blog.vercel.app/",
   siteLogo: "/images/logo.png",

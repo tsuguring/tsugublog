@@ -10,10 +10,10 @@ export default function ContentLayout({ content, pagename }) {
   return (
     <>
       <ContentSEO
-        url={`${siteMetadata.siteUrl}/${content}/${content.id}`}
+        url={`${siteMetadata.siteUrl}/${pagename}/${content.id}`}
         content={content}
       />
-      <div className="max-w-xl px-2 pt-10 mx-auto md:px-6 md:max-w-2xl xl:max-w-3xl xl:px-0">
+      <div className="max-w-xl px-2 sm:pt-10 mx-auto md:px-6 md:max-w-2xl xl:max-w-3xl xl:px-0">
         <header>
           <div>
             <div className="flex justify-center">
@@ -43,9 +43,9 @@ export default function ContentLayout({ content, pagename }) {
           <Body body={content.body} />
         </article>
         <footer>
-          <div className="flex justify-center py-5 sm:pt-10 sm:pb-4">
+          <div className="flex justify-center pt-5 pb-1 sm:pt-10 sm:pb-4">
             <Link href={`/${pagename}`} aria-label={`他の${pagename}も見る`}>
-              <button className="inline px-4 py-2 text-normal font-medium leading-5 text-gray-100 hover:text-gray-900 dark:text-gray-900 dark:hover:text-gray-100 transition-colors duration-150 bg-gray-900 dark:bg-gray-100 border-2 rounded-lg shadow focus:outline-none hover:bg-gray-100 dark:hover:bg-gray-900">
+              <button className="inline px-4 py-2 text-normal sm:px-6 sm:text-lg font-medium leading-5 text-gray-100 hover:text-gray-900 dark:text-gray-900 dark:hover:text-gray-100 transition-colors duration-150 bg-gray-900 dark:bg-gray-100 border-2 rounded-lg shadow focus:outline-none hover:bg-gray-100 dark:hover:bg-gray-900">
                 Other {pagename}
               </button>
             </Link>

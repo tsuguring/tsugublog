@@ -4,7 +4,7 @@ const siteMetadata = {
   belongs: "Kwansei Gakuin University",
   headerTitle: "TsuguBlog",
   description:
-    "開発未経験、技術知識がないエンジニアを目指す方に向けて技術情報などを共有するブログ",
+    "開発未経験、技術知識がないエンジニアを目指す方に向けて技術情報などを共有するブログ。",
   language: "ja",
   siteUrl: "https://tsugu-blog.vercel.app/",
   siteLogo: "/images/logo.png",

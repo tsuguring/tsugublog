@@ -13,7 +13,7 @@ export default function ContentLayout({ content, pagename }) {
         url={`${siteMetadata.siteUrl}/${pagename}/${content.id}`}
         content={content}
       />
-      <div className="max-w-xl px-2 sm:pt-10 mx-auto md:px-6 md:max-w-2xl xl:max-w-3xl xl:px-0">
+      <article className="max-w-xl px-2 sm:pt-10 mx-auto md:px-6 md:max-w-2xl xl:max-w-3xl xl:px-0">
         <header>
           <div>
             <div className="flex justify-center">
@@ -39,9 +39,7 @@ export default function ContentLayout({ content, pagename }) {
             </figure>
           </div>
         </header>
-        <article>
-          <Body body={content.body} />
-        </article>
+        <Body body={content.body} />
         <footer>
           <div className="flex justify-center pt-5 pb-1 sm:pt-10 sm:pb-4">
             <Link href={`/${pagename}`} aria-label={`他の${pagename}も見る`}>
@@ -51,7 +49,7 @@ export default function ContentLayout({ content, pagename }) {
             </Link>
           </div>
         </footer>
-      </div>
+      </article>
     </>
   );
 }

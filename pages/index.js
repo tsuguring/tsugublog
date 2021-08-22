@@ -42,10 +42,14 @@ export default function Home() {
               <SocialIcon
                 kind="mail"
                 href={`mailto:${siteMetadata.email}`}
-                size="6"
+                size={30}
               />
-              <SocialIcon kind="github" href={siteMetadata.github} size="6" />
-              <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
+              <SocialIcon kind="github" href={siteMetadata.github} size={30} />
+              <SocialIcon
+                kind="twitter"
+                href={siteMetadata.twitter}
+                size={30}
+              />
             </div>
           </div>
         </div>

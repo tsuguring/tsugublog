@@ -6,21 +6,19 @@ import siteMetadata from "../data/siteMetadata";
 
 export default function Blog({ blog }) {
   return (
-    <>
+    <Layout>
       <PageSEO
         title={`ブログ - ${siteMetadata.title}`}
         description={siteMetadata.description}
       />
-      <Layout>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10">
-          {blog.map((blog) => (
-            <div key={blog.id}>
-              <Card content={blog} pagename="blog" />
-            </div>
-          ))}
-        </div>
-      </Layout>
-    </>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10">
+        {blog.map((blog) => (
+          <div key={blog.id}>
+            <Card content={blog} pagename="blog" />
+          </div>
+        ))}
+      </div>
+    </Layout>
   );
 }
 

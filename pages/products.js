@@ -6,21 +6,19 @@ import siteMetadata from "../data/siteMetadata";
 
 export default function Products({ products }) {
   return (
-    <>
+    <Layout>
       <PageSEO
         title={`プロダクト - ${siteMetadata.title}`}
         description={siteMetadata.description}
       />
-      <Layout>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10">
-          {products.map((products) => (
-            <div key={products.id}>
-              <Card content={products} pagename="products" />
-            </div>
-          ))}
-        </div>
-      </Layout>
-    </>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10">
+        {products.map((products) => (
+          <div key={products.id}>
+            <Card content={products} pagename="products" />
+          </div>
+        ))}
+      </div>
+    </Layout>
   );
 }
 

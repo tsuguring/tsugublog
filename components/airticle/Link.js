@@ -1,4 +1,4 @@
-export const Link = ({ key, link }) => (
+export const Link = ({ link }) => (
   <div className="py-1 sm:py-6 break-all">
     <a
       href={`${link}`}

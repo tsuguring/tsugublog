@@ -41,7 +41,7 @@ export default function ContentLayout({ content, pagename }) {
         </header>
         <Body body={content.body} />
         <footer>
-          <div className="flex justify-center pt-5 pb-1 sm:pt-10 sm:pb-4">
+          <div className="flex justify-center pt-6 sm:pt-12">
             <Link href={`/${pagename}`} aria-label={`他の${pagename}も見る`}>
               <button className="inline px-4 py-2 text-normal sm:px-6 sm:text-lg font-medium leading-5 text-gray-100 hover:text-gray-900 dark:text-gray-900 dark:hover:text-gray-100 transition-colors duration-150 bg-gray-900 dark:bg-gray-100 border-2 rounded-lg focus:outline-none hover:bg-gray-100 dark:hover:bg-gray-900">
                 Other {pagename}

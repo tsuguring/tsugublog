@@ -29,19 +29,15 @@ const Layout = ({ children }) => {
             </Link>
           </div>
           <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:flex">
+            <div className="hidden md:flex">
               {headerNavLinks.map((link) => (
-                <div
+                <Link
+                  href={link.href}
                   key={link.title}
-                  className="border-b-2 border-transparent hover:border-gray-900 dark:hover:border-gray-100 transition duration-300 ease-in-out m-2 py-2 md:mx-5"
+                  className="font-medium text-gray-900 dark:text-gray-100 border-b-2 border-transparent hover:border-gray-900 dark:hover:border-gray-100 transition duration-300 ease-in-out m-2 py-2 md:mx-5"
                 >
-                  <Link
-                    href={link.href}
-                    className="font-medium text-gray-900 dark:text-gray-100"
-                  >
-                    {link.title}
-                  </Link>
-                </div>
+                  {link.title}
+                </Link>
               ))}
             </div>
             <ThemeSwich />

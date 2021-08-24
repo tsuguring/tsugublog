@@ -32,13 +32,13 @@ export default function Home() {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 hover:text-gray-400 sm:p-2 dark:text-gray-100"
+                  className="p-1 font-medium text-gray-900 hover:text-gray-400 sm:p-2 dark:text-gray-100 dark:hover:text-gray-400"
                 >
                   {link.title}
                 </Link>
               ))}
             </div>
-            <div className="flex py-2 px-2 space-x-4">
+            <div className="flex py-2 px-2 space-x-6">
               <SocialIcon
                 kind="mail"
                 href={`mailto:${siteMetadata.email}`}

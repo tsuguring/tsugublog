@@ -1,6 +1,7 @@
 import Link from "./Link";
 import siteMetadata from "../data/siteMetadata";
 import SocialIcon from "./SocialIcon";
+import headerNavLinks from "../data/NavLinks";
 
 export default function Footer() {
   return (
@@ -10,10 +11,10 @@ export default function Footer() {
           <SocialIcon
             kind="mail"
             href={`mailto:${siteMetadata.email}`}
-            size={30}
+            size={25}
           />
-          <SocialIcon kind="github" href={siteMetadata.github} size={30} />
-          <SocialIcon kind="twitter" href={siteMetadata.twitter} size={30} />
+          <SocialIcon kind="github" href={siteMetadata.github} size={25} />
+          <SocialIcon kind="twitter" href={siteMetadata.twitter} size={25} />
         </div>
         <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{siteMetadata.author}</div>

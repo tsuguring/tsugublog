@@ -1,8 +1,7 @@
-const NavLinks = [
-  { href: "/", title: "ホーム" },
+const HomeNavLinks = [
   { href: "/products", title: "プロダクト" },
   { href: "/blog", title: "ブログ" },
   { href: "/profile", title: "プロフィール" },
 ];
 
-export default NavLinks;
+export default HomeNavLinks;

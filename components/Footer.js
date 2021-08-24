@@ -1,7 +1,6 @@
 import Link from "./Link";
 import siteMetadata from "../data/siteMetadata";
 import SocialIcon from "./SocialIcon";
-import headerNavLinks from "../data/NavLinks";
 
 export default function Footer() {
   return (

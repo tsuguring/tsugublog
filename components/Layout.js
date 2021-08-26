@@ -1,13 +1,16 @@
 import siteMetadata from "../data/siteMetadata";
-import headerNavLinks from "../data/HeaderNavLinks";
+import headerNavLinks from "../data/NavLinks";
 import Link from "./Link";
 import SectionContainer from "./SectionContainer";
 import Footer from "./Footer";
 import Logo from "../public/images/logo.svg";
 import MobileNav from "../components/MobileNav";
 import ThemeSwich from "../components/ThemeSwich";
+import { useRouter } from "next/router";
 
 const Layout = ({ children }) => {
+  const router = useRouter();
+
   return (
     <SectionContainer>
       <div className="flex flex-col justify-between h-screen">
@@ -34,7 +37,11 @@ const Layout = ({ children }) => {
                 <Link
                   href={link.href}
                   key={link.title}
-                  className="font-medium text-gray-900 dark:text-gray-100 border-b-2 border-transparent hover:border-gray-900 dark:hover:border-gray-100 transition duration-300 ease-in-out m-2 py-2 md:mx-5"
+                  className={
+                    router.pathname.startsWith(link.href)
+                      ? "font-medium text-gray-900 dark:text-gray-100 border-b-2 border-gray-900 dark:border-gray-100 transition duration-300 ease-in-out m-2 py-2 md:mx-5"
+                      : "font-medium text-gray-900 dark:text-gray-100 border-b-2 border-transparent hover:border-gray-900 dark:hover:border-gray-100 transition duration-300 ease-in-out m-2 py-2 md:mx-5"
+                  }
                 >
                   {link.title}
                 </Link>

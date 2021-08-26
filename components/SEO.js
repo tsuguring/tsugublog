@@ -47,14 +47,7 @@ export const PageSEO = ({ title, description }) => {
   );
 };
 
-export const ContentSEO = ({
-  authorDetails,
-  date,
-  lastmod,
-  url,
-  images = [],
-  content,
-}) => {
+export const ContentSEO = ({ content, authorDetails, url, images = [] }) => {
   const router = useRouter();
   const publishedAt = content.publishedAt;
   const modifiedAt = content.revisedAt;

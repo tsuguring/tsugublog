@@ -1,9 +1,11 @@
 import { useState } from "react";
 import Link from "./Link";
 import headerNavLinks from "../data/NavLinks";
+import { useRouter } from "next/router";
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false);
+  const router = useRouter();
 
   const onToggleNav = () => {
     setNavShow((status) => {
@@ -64,7 +66,15 @@ const MobileNav = () => {
               <Link href={link.href} onClick={onToggleNav}>
                 <div className="flex text-lg font-medium tracking-wide text-gray-900 dark:text-gray-100">
                   <div>・</div>
-                  {link.title}
+                  <div
+                    className={
+                      router.pathname.startsWith(link.href)
+                        ? " border-b-2 border-gray-900 dark:border-gray-100"
+                        : ""
+                    }
+                  >
+                    {link.title}
+                  </div>
                 </div>
               </Link>
             </div>

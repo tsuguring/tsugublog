@@ -1,5 +1,5 @@
 import siteMetadata from "../data/siteMetadata";
-import homeNavLinks from "../data/HomeNavLinks";
+import homeNavLinks from "../data/NavLinks";
 import Logo from "../public/images/logo.svg";
 import Link from "../components/Link";
 import ThemeSwitch from "../components/ThemeSwich";

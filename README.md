@@ -42,3 +42,6 @@ TsuguBlogはJavaScript+Next.js+TailwindCSS+microCMSで作成したJAMstackブロ
 - `git clone git@github.com:tsuguring/JAMstack-blog.git`
 
 **APIについて**: APIはオープンソース化していません。
+
+## Lisence
+The processing application is available as open source under the terms of the MIT License.

@@ -5,12 +5,6 @@
   </a>
 </p>
 
-<p align="center">
-  JAMstackブログ
-</p>
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -40,6 +34,9 @@ TsuguBlogはJavaScript+Next.js+TailwindCSS+microCMSで作成したJAMstackブロ
 ## Build Process
 
 - `git clone git@github.com:tsuguring/JAMstack-blog.git`
+- `yarn`(パッケージをインストール)
+- `npm run dev`
+- [http://localhost:3000](http://localhost:3000) を開く。
 
 **APIについて**: APIはオープンソース化していません。
 

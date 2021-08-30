@@ -14,7 +14,6 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [RoadMap](#roadmap)
 - [Feedback](#feedback)
 - [Build Process](#build-process)
 

@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center"> TsuguBlog </h1> <br>
+<p align="center">
+  <a href="https://tsugu-blog.vercel.app/">
+    <img alt="TsuguBlog" title="TsuguBlog" src="https://user-images.githubusercontent.com/52564598/131292015-a0b0b237-1b73-4b8d-a388-d643fa79c8af.png">
+  </a>
+</p>
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Introduction](#introduction)
+- [Feedback](#feedback)
+- [Build Process](#build-process)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+TsuguBlogはJavaScript+Next.js+TailwindCSS+microCMSで作成したJAMstackブログです。
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+ソースコードは完全にオープンソースで公開されています。
+ソースコードURL: https://github.com/tsuguring/JAMstack-blog
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- ブログを作成したいけどどうやって始めればいいかわからない
+- モダンな技術を使ってブログを作成したい
+- 技術情報をブログで手に入れたい
 
-## Learn More
+こんな思いがあるすべての方に届きますように。
+ご質問等ある方は https://twitter.com/tsuguri0912 までDMください。
 
-To learn more about Next.js, take a look at the following resources:
+## Feedback
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+フィードバックやお問い合わせ・質問などは [Twitter](https://twitter.com/tsuguri0912) でお気軽にお願いします。 機能要望などもあればぜひ！ 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Build Process
 
-## Deploy on Vercel
+- `git clone git@github.com:tsuguring/JAMstack-blog.git`
+- `npm init`
+- `npm run dev`
+- [http://localhost:3000](http://localhost:3000) を開く。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**APIについて**: APIはオープンソース化していません。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Lisence
+The processing application is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

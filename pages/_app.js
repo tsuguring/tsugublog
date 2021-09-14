@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import * as gtag from "../libs/gtag";
 
 function MyApp({ Component, pageProps }) {
+  //Google Analytics
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url) => {

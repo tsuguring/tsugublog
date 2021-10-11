@@ -1,4 +1,6 @@
-<h1 align="center"> TsuguBlog </h1> <br>
+<a href="https://tsugu-blog.vercel.app/">
+  <h1 align="center"> TsuguBlog </h1> <br>
+<a/>
 <p align="center">
   <a href="https://tsugu-blog.vercel.app/">
     <img alt="TsuguBlog" title="TsuguBlog" src="https://user-images.githubusercontent.com/52564598/131292015-a0b0b237-1b73-4b8d-a388-d643fa79c8af.png">

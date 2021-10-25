@@ -34,7 +34,7 @@
 ## Build Process
 
 - `git clone git@github.com:tsuguring/JAMstack-blog.git`
-- `npm init`
+- `npm init` or `yarn`
 - `npm run dev`
 - [http://localhost:3000](http://localhost:3000) を開く。
 

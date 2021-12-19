@@ -15,7 +15,7 @@
 
 ## Introduction
 
-TsuguBlogはJavaScript+Next.js+TailwindCSS+microCMSで作成したJAMstackブログです。
+<a href="https://tsugu-blog.vercel.app/">TsuguBlog</a>はJavaScript+Next.js+TailwindCSS+microCMSで作成したJAMstackブログです。
 
 ソースコードは完全にオープンソースで公開されています。
 ソースコードURL: https://github.com/tsuguring/JAMstack-blog
@@ -34,7 +34,7 @@ TsuguBlogはJavaScript+Next.js+TailwindCSS+microCMSで作成したJAMstackブロ
 ## Build Process
 
 - `git clone git@github.com:tsuguring/JAMstack-blog.git`
-- `npm init`
+- `npm init` or `yarn`
 - `npm run dev`
 - [http://localhost:3000](http://localhost:3000) を開く。
 

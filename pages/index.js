@@ -16,13 +16,13 @@ export default function Home({ blog, products }) {
         description={siteMetadata.description}
       />
       <div className="h-full">
-        <div className="flex justify-center items-center absolute sm:w-1/2 w-full h-full sm:left-0 bg-gray-100 dark:bg-gray-800">
+        <div className="flex justify-center items-center absolute sm:w-1/2 w-full h-full sm:left-0">
           <div>
             <div className="flex px-2 py-2">
               <div className="mr-1">
                 <Logo />
               </div>
-              <div className="h-7 text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 md:block">
+              <div className="h-7 text-2xl md:text-3xl font-semibold md:block">
                 {siteMetadata.headerTitle}
               </div>
               <div className="pt-1">

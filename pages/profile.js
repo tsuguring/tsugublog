@@ -36,15 +36,15 @@ export default function Profile() {
               情報分野学科の大学生です。
             </p>
             <p className="px-4 py-4 text-lg leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
-              現在はフロントエンドエンジニアを目指しており、様々なプロダクトを開発しています。このブログの開発で使用した技術はJavaScript、Next.js、TailwindCSS、microCMSです。
+              Webサイト、ネイティブアプリなどの様々なプロダクトを開発しています。このブログの開発で使用した技術はJavaScript、Next.js、TailwindCSS、microCMSです。
             </p>
             <p className="px-4 py-4 text-lg leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
-              このwebサイトでは「開発したプロダクト」、「情報を共有するブログ」を掲載します。
+              このWebサイトでは「開発したプロダクト」、「情報を共有するブログ」を掲載します。
             </p>
           </div>
           <div className="mt-16 flex flex-col border-2 border-gray-500 rounded border-opacity-60">
             <h2 className="px-4 py-4 text-xl font-bold tracking-normal text-gray-900 dark:text-gray-100 md:text-2xl">
-              プログラミング言語
+              プログラミング技術
             </h2>
             <div className="px-2 py-4 flex flex-wrap">
               <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
@@ -52,6 +52,9 @@ export default function Profile() {
               </div>
               <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
                 JavaScript
+              </div>
+              <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
+                TypeScript
               </div>
               <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
                 C
@@ -64,6 +67,9 @@ export default function Profile() {
               </div>
               <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
                 React
+              </div>
+              <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
+                React Native
               </div>
               <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
                 Next.js

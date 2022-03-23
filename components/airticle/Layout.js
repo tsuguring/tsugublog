@@ -21,7 +21,7 @@ export default function ContentLayout({ content, pagename }) {
                 format="YYYY/MM/DD"
                 className="text-medium sm:text-lg font-semibold py-2 md:py-6 sm:py-4 text-gray-900 dark:text-gray-100 max-w-none"
               >
-                {content.updatedAt}
+                {content.createdAt}
               </Moment>
             </div>
             <PageTitle>{content.title}</PageTitle>
@@ -33,8 +33,8 @@ export default function ContentLayout({ content, pagename }) {
                 alt={content.title}
                 src={content.image.url}
                 className="object-cover object-center rounded-lg"
-                width={1212}
-                height={582}
+                width={1440}
+                height={720}
               />
             </figure>
           </div>

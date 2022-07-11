@@ -48,7 +48,7 @@ export default function Profile() {
               嫌いなこと
             </p>
             <p className="px-4 text-lg leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
-              ネガティブ思考、きのこ、前例が少ないエラー、英語(公式ドキュメント、論文などを読むことがしんどい)
+              ネガティブ思考、きのこ、前例が少ないエラー、英語(公式ドキュメント、論文などを読むことがしんどい→training中)
             </p>
             <p className="px-4 pt-6 pb-1 text-lg font-semibold leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
               経歴

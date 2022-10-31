@@ -33,9 +33,9 @@
 
 ## Build Process
 
-- `git clone git@github.com:tsuguring/JAMstack-blog.git`
+- `git clone git@github.com:tsuguring/TsuguBlog.git`
 - `npm init` or `yarn`
-- `npm run dev`
+- `npm run dev` or `yarn dev`
 - [http://localhost:3000](http://localhost:3000) を開く。
 
 **APIについて**: APIはオープンソース化していません。

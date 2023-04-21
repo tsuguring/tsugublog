@@ -38,7 +38,5 @@
 - `npm run dev` or `yarn dev`
 - [http://localhost:3000](http://localhost:3000) を開く。
 
-**APIについて**: APIはオープンソース化していません。
-
 ## Lisence
 The processing application is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

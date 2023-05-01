@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import SocialIcon from "../components/SocialIcon";
 import siteMetadata from "../data/siteMetadata";
 import PageTitle from "../components/PageTitle";
+import Image from "next/image";
 import { PageSEO } from "../components/SEO";
 
 export default function Profile() {
@@ -42,13 +43,13 @@ export default function Profile() {
               好きなこと
             </p>
             <p className="px-4 text-lg leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
-              プログラミング、ものづくり、麻雀、スポーツ観戦
+              プログラミング、スポーツ観戦、ゴルフ、麻雀
             </p>
             <p className="px-4 pt-6 pb-1 text-lg font-semibold leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
               嫌いなこと
             </p>
             <p className="px-4 text-lg leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
-              ネガティブ思考、きのこ、英語(公式ドキュメント、論文などを読むことがしんどい→training中)
+              ネガティブ思考、きのこ
             </p>
             <p className="px-4 pt-6 pb-1 text-lg font-semibold leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
               経歴
@@ -83,9 +84,12 @@ export default function Profile() {
             <p className="px-4 pt-6 pb-1 text-lg font-semibold leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
               目標
             </p>
-            <p className="px-4 text-lg leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
-              情報通信技術を用いて世界中の人々の生活をより幸せに。
-            </p>
+            <Image
+              alt="purpose of life"
+              src="/images/purpose_of_life.png"
+              width={1500}
+              height={800}
+            />
             <p className="px-4 pt-6 pb-1 text-lg font-semibold leading-8 tracking-normal text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-9 md:text-xl md:leading-10">
               概要
             </p>
@@ -95,7 +99,7 @@ export default function Profile() {
           </div>
           <div className="mt-16 flex flex-col border-2 border-gray-500 rounded border-opacity-60">
             <h2 className="px-4 py-4 text-xl font-bold tracking-normal text-gray-900 dark:text-gray-100 md:text-2xl">
-               スキルセット
+               触ったことのある技術
             </h2>
             <div className="px-2 py-4 flex flex-wrap">
               <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
@@ -118,6 +122,9 @@ export default function Profile() {
               </div>
               <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
                 SwiftUI
+              </div>
+              <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
+                CoreML
               </div>
               <div className="text-xs text-gray-100 dark:text-gray-900 text-center bg-gray-900 dark:bg-gray-100 px-4 py-2 m-2 rounded-md">
                 Node.js
